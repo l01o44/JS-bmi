@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>ИМТ</title>
+    </head>
+
+    <body>
+      <h1> Индекс массы тела </h1>
+      <p> Пожалуйста, заполните некоторые данные о себе. </p>
+      <form name = "main">
+        <label for="name">Имя</label>
+        <input type="text" id="name"><br><br>
+
+        <label for="birthday">Дата рождения</label>
+        <input type="date" id="birthday"><br><br>
+
+        <label for="city"> Город проживания </label>
+        <input type="text" id="city"><br><br>
+
+        <label for="weight">Вес</label>
+        <input type="number" id="weight"><br><br>
+        
+        <label for="height">Рост</label>
+        <input type="number" id="height"><br><br>
+          
+          <!-- <input type="submit" id = "calc" value="Рассчёт ИМТ"> -->
+          <button type="button" id = "calc" onclick = "calcBmi()">Рассчёт ИМТ</button>
+          <button type="button" id = "show" onclick = "showResults()">Показать результаты расчётов</button>
+                 
+        </form>
+
+        <div id = "result1"></div>
+        <div id = "result2"></div>
+        
+
+        <script src = "bmi.js"> </script> 
+    </body>
+
+</html>
